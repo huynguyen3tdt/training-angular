@@ -1,0 +1,48 @@
+.caculator{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.output div{
+    width: 250px;
+    outline: none;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.input{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    outline: none;
+}
+.input_item{
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+.math{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.math_item{
+    width: 100%;
+    border: none;
+    background-color: #ccc;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
