@@ -1,4 +1,6 @@
+
 .caculator{
+    font-family: 'Poppins', sans-serif;
     height: 100%;
     display: flex;
     align-items: center;
@@ -9,12 +11,23 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.output{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 .output div{
     width: 250px;
     outline: none;
-    height: 70px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    height: 20px;
+}
+.math_cacu{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.result{
+    border-top: 1px solid #ccc;
 }
 .input{
     margin-top: 10px;
@@ -40,9 +53,18 @@
 .math_item{
     width: 100%;
     border: none;
-    background-color: #ccc;
+    background-color: rgb(180, 180, 180);
     font-weight: 600;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
+}
+.clear{
+    background-color: rgb(226, 31, 31);
+}
+.show{
+    background-color: rgb(38, 114, 49);
+}
+.output div{
+    padding: 10px;
 }

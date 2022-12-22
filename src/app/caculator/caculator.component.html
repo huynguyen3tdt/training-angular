@@ -1,20 +1,29 @@
 <div class="caculator">
     <div class="wrapper">
+
         <div class="output">
-            <div type="text">{{result}}</div>
+            <div type="text">{{inputA}}</div>
+            <span class="math_cacu">{{math_cacu}}</span>
+            <div type="text">{{inputB}}</div>
+            <div type="text" class="result">{{result}}</div>
         </div>
+
         <div class="input">
             <label for="">Input A</label>
-            <input class="input_item" type="text">
+            <input class="input_item" type="text" [(ngModel)] ="inputA"(ngModelChange)="inputA = $event" >
             <label for="">Input B</label>
-            <input class="input_item" type="text">
+            <input class="input_item" type="text" [(ngModel)] ="inputB"(ngModelChange)="inputB = $event">
+        </div>
+
+        <div class="math" >
+            <button *ngFor="let item of caculates" [ngClass]="['math_item', item.class]" (click) = "fnCaculate(item)">{{item.display}}</button>
         </div>
         <div class="math">
-            <button class="math_item add">+</button>
-            <button class="math_item sub">-</button>
-            <button class="math_item mul">x</button>
-            <button class="math_item buttonison">:</button>
+            <button class="math_item clear" (click)="clear()">Clear</button>
             <button class="math_item show">=</button>
         </div>
+
+       
     </div>
+    
 </div>
